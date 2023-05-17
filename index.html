@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+    .grid-container {
+      display: grid;
+      gap: 9px;
+      width: 748px;
+      height: 748px;
+      grid-template-columns: 320px 360px 50px;
+      grid-template-rows: 414px 324px;
+      background-color:#000;
+    }
+
+    div {
+      background-color: #F0F1EC;
+    }
+    .red {
+      background-color: #E72F24;
+    }
+
+    .second {
+      grid-column:  span 2;
+    }
+
+    .flex-container {
+      display: flex;
+      flex-direction: column;
+      background-color: #000;
+    }
+    .blue {
+      background-color: #004592;
+      height: 130px;
+      width: 50px;
+      border-bottom: 19px solid #000;
+    }
+    .seventh {
+      background-color: #F0F1EC;
+      height: 184px;
+      width: 50px;
+    }
+    .bottom-flex-container {
+      display: flex;
+      gap: 9px;
+      background-color: #000;
+    }
+    .yellow {
+      background-color: #F9D01E;
+      height: 20px;
+      width: 198px;    
+    }
+    .black {
+      background-color: #232629;
+      height: 20px;
+      width: 153px;    
+    }
+    .fourth {
+      display: flex;
+      flex-direction: column;
+      background-color: #000;
+      gap: 9px;
+    }
+    .left-top {
+      background-color: #F0F1EC ;
+      height: 295px;
+      width: 320px;
+    }
+    .left-bottom {
+      background-color: #F0F1EC ;
+      height: 20px;
+      width: 320px;
+    }
+    .fifth {
+      display: flex;
+      flex-direction: column;
+      background-color: #000;
+      gap: 9px;
+    }
+    .eightth {
+      background-color: #F0F1EC ;
+      height: 295px;
+      width: 360px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="grid-container">
+    <div class="red"></div>
+    <div class="second"></div>
+    <div class="fourth">
+      <div class="left-top"></div>
+      <div class="left-bottom"></div>
+    </div>
+    <div class="fifth">
+      <div class="eightth"></div>
+      <div class="bottom-flex-container">
+        <div class="yellow"></div>
+        <div class="black"></div>
+     </div>
+    </div>
+    <div class="flex-container">    
+      <div class="blue"></div>
+      <div class="seventh"></div>
+    </div>
+
+
+    <div class="eleventh"></div>
+  </div>
+</body>
+
+</html>
